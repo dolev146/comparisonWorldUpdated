@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+Dear Aviya,
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have completed the character comparison page assignment using React.
 
-## Available Scripts
+You can access the site with the following link: https://fbpuq1.csb.app/
+You can inspect the source code by clicking "Open Sandbox" located at the bottom right corner of the screen.
 
-In the project directory, you can run:
+Please let me know if you have any questions.
+Thank you very much,
+Dolev Dublon
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Comparing World Of Rick And Morty
 
-### `npm test`
+This project is a side-by-side comparison page for two characters from the popular TV show, Rick and Morty. The page allows users to search for characters, add/remove them to the comparison, and view details such as their picture, name, and an additional character attribute.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The data for the characters is pulled from the Rick and Morty API (https://rickandmortyapi.com/).
 
-### `npm run build`
+The project was built using JavaScript, a front-end framework (React), and the Rick and Morty API documentation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can view the live project at https://fbpuq1.csb.app/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Note
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please let me know if there is anything else that you need or any further questions you have. 
+050-588-4960
+dolev146@gmail.com
 
-### `npm run eject`
+# Table of contents
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Comparing World Of Rick And Morty](#comparing-world-of-rick-and-morty)
+- [Delopment Proccess](#delopment-proccess)
+  - [API Reference](#api-reference)
+  - [Authors](#authors)
+  - [Demo](#demo)
+  - [Screenshots](#screenshots)
+  - [Tech Stack](#tech-stack)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Delopment Proccess
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I selected React as my preferred framework for developing the website due to my familiarity with it and its reputation for being fast and efficient. To optimize the website's performance, I frequently employed the technique of "Hoisting the State" and implemented a modular design by creating a reusable component for character comparison. Despite encountering an issue with naming conventions early on, I was able to quickly resolve it and ensure consistency throughout the development process.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Reference
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://rickandmortyapi.com/
 
-### Code Splitting
+The Rick and Morty API is a REST(ish) and GraphQL API based on the television show Rick and Morty. You will have access to about hundreds of characters, images, locations and episodes. The Rick and Morty API is filled with canonical information as seen on the TV show.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I used this two end points.
 
-### Analyzing the Bundle Size
+#### Get all character
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```http
+  GET /api/character
+```
 
-### Making a Progressive Web App
+#### Get character
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```http
+  GET /api/character/?name=${name}
+```
 
-### Advanced Configuration
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Required**. name of character to fetch |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [@dolev146](https://www.github.com/dolev146)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Demo
+
+- [Live Website](https://fbpuq1.csb.app/)
+- in order to inspect the code, in the bottom right corner press the button 'Show Sandbox'.
+
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/62290677/215030721-2afaba61-4937-4cb1-ac91-8679eb8fc970.png)
+![image](https://user-images.githubusercontent.com/62290677/215030834-601472e7-69e3-4199-bcbd-52c62eaf2f64.png)
+![image](https://user-images.githubusercontent.com/62290677/215030497-c92880d4-e8a4-49d7-b73f-0c3d0a3026b5.png)
+
+
+
+
+## Tech Stack
+
+**Client:** React, fetchAPI, Rick&MortyAPI
+
+
+
